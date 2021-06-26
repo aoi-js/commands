@@ -1,7 +1,7 @@
 const Aoijs = require('aoi.js');
 const bot = new Aoijs.Bot({
-token: "YOUR_TOKEN",
-prefix: ["!", "<@$clientID> "]
+token: "YOUR_TOKEN", //BOT TOKEN//
+prefix: ["!", "<@$clientID> "] //BOT PREFIX//
 });
 
 bot.onMessage()
@@ -11,7 +11,13 @@ text: "NO ONE",
 type: "WATCHING", time: "12"
 })
 bot.status({
-text: "WIND",
+text: "WIND", //THE TEXT//
 type: "LISTENING", time: "12" //12 Second//
-     //TYPE: LISTENING//
+//TYPE: LISTENING//
+})
+
+bot.variables({
+  variable1: "value1",
+  variable2: 2,
+  variable3: 'value3'
 })
